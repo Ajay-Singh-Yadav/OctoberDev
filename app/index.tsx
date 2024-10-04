@@ -6,6 +6,8 @@ export default function index() {
     <View>
       <Text>index</Text>
       <Text>Hello World</Text>
+      <Text>Hello World</Text>
+      <Text>Hello World</Text>
     </View>
   )
 }
