@@ -1,6 +1,7 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Pressable, } from 'react-native'
 import React from 'react'
 
+import { Link } from 'expo-router'
 
  type DayListItem ={
     days :number;
@@ -8,9 +9,13 @@ import React from 'react'
 
 export default function DayListItem({days} : DayListItem) {
   return (
-    <View style={styles.box} >
+    <Link href={`/(days)/day${days}`} asChild>
+  
+    <Pressable  style={styles.box} >
     <Text style={styles.text}>{days}</Text>
-  </View>
+   
+    </Pressable>
+  </Link>
   )
 }
 

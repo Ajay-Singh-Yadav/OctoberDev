@@ -8,14 +8,14 @@ import {
     Inter_900Black,
   } from '@expo-google-fonts/inter';
 
-import DayListItem from "@/components/core/dayListItem";
+import DayListItem from "@/src/components/core/dayListItem";
 
 const days = [...Array(24)].map((val, index) => index + 1)
 
 
 SplashScreen.preventAutoHideAsync();
  
-export default function index() {
+export default function HomeScreen() {
 
     const [fontLoaded]  =  useFonts({
         Inter: Inter_900Black,
