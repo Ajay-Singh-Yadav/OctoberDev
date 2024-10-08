@@ -5,6 +5,7 @@ export default function EditorScreen() {
   return (
     <View>
       <Text>EditorScreen</Text>
+      <Text>day3 branch</Text>
     </View>
   )
 }
